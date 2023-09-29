@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness tracker app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="mainContainer">
+        
+        <div class="textContainer">
+            
+            <div class="headerContainer">
+                <h1>Intense workout</h1>
+                <p class="paragraph">Decide whether you want to do a Push-Up Position Plank or a Forearm Position Plank or any other Static Exercise?</p>
+                <p class="paragraph">It's easy with this app! Set a time, start a timer and keep on doing. Music will help you know when you've done!</p>
+                <p class="paragraph">If you are a begginner, start with 15-20 seconds and then increase time every other time you are doing exersice!</p>
+            </div>
+            
+            <div class="timerContainer">
+                <label id="setTime">set time</label>
+                <input type="text" id="input" placeholder="Enter seconds...">
+                <button id="btn">start</button>
+                <p id="countDown"></p>
+            </div>
+        </div>
+    </div>
+
+    <audio id="player" autoplay loop>
+        <source src="music.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="index.js"></script>
+</body>
+</html>
